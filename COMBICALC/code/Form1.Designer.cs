@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.nTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.FuncLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.solutionLabel = new System.Windows.Forms.Label();
             this.kTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.resultTextBox = new System.Windows.Forms.TextBox();
             this.operationComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -47,14 +46,14 @@
             this.nTextBox.TabIndex = 0;
             this.nTextBox.TextChanged += new System.EventHandler(this.nTextBox_TextChanged);
             // 
-            // label1
+            // FuncLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(100, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "C(n,k)";
+            this.FuncLabel.AutoSize = true;
+            this.FuncLabel.Location = new System.Drawing.Point(100, 35);
+            this.FuncLabel.Name = "FuncLabel";
+            this.FuncLabel.Size = new System.Drawing.Size(35, 13);
+            this.FuncLabel.TabIndex = 1;
+            this.FuncLabel.Text = "C(n,k)";
             // 
             // button1
             // 
@@ -100,13 +99,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "K";
             // 
-            // resultTextBox
-            // 
-            this.resultTextBox.Location = new System.Drawing.Point(315, 86);
-            this.resultTextBox.Name = "resultTextBox";
-            this.resultTextBox.Size = new System.Drawing.Size(100, 20);
-            this.resultTextBox.TabIndex = 7;
-            // 
             // operationComboBox
             // 
             this.operationComboBox.FormattingEnabled = true;
@@ -126,13 +118,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.operationComboBox);
-            this.Controls.Add(this.resultTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.kTextBox);
             this.Controls.Add(this.solutionLabel);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.FuncLabel);
             this.Controls.Add(this.nTextBox);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -144,13 +135,12 @@
         #endregion
 
         private System.Windows.Forms.TextBox nTextBox;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label FuncLabel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label solutionLabel;
         private System.Windows.Forms.TextBox kTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox resultTextBox;
         private System.Windows.Forms.ComboBox operationComboBox;
     }
 }
