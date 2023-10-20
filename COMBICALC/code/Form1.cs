@@ -162,7 +162,18 @@ namespace CCcode1
 
         private void operationComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (operationComboBox.SelectedItem == "Сочетания")
+            {
+                FuncLabel.Text = "C(n,k)";
+            }
+            else if (operationComboBox.SelectedItem == "Перестановки")
+            {
+                FuncLabel.Text = "P(n,k)";
+            }
+            else if (operationComboBox.SelectedItem == "Разложения")
+            {
+                FuncLabel.Text = "A = n^k";
+            }
         }
     }
 }
